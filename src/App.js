@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Greetings from './components/Greetings/Greetings';
 import CardList from './components/CardList/CardList';
 import QuickHeader from './components/QuickHeader/QuickHeader';
+import SmallCardList from './components/SmallCardList/SmallCardList';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Greetings></Greetings>
         <CardList></CardList>
         <QuickHeader></QuickHeader>
+        <SmallCardList></SmallCardList>
       </div>
     </div>
   );
