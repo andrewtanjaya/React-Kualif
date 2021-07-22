@@ -1,0 +1,10 @@
+.quick-header{
+    margin-left: 20px;
+    color: white;
+    line-height: 0.2rem;
+    font-size: 1.2rem;
+}
+.quick-header p:nth-child(1){
+    color: #928E92;
+    font-size: 0.8rem;
+}

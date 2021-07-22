@@ -1,0 +1,24 @@
+.card-image{
+    width: 160px;
+    height: 160px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin : 0 10px;
+}
+
+.card-image img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 80px;
+}
+
+.card-description{
+    color: white;
+
+}
