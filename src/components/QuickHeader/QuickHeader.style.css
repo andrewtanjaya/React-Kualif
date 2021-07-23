@@ -8,3 +8,9 @@
     color: #928E92;
     font-size: 0.8rem;
 }
+
+@media only screen and (min-width: 615px) {
+    .quick-header{
+        margin-left: 60px;
+    }
+}

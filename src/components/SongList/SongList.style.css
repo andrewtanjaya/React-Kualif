@@ -8,3 +8,11 @@
     flex-wrap: wrap;
     overflow-x: scroll;
 }
+
+@media only screen and (min-width: 615px) {
+    .song-card-list-container{
+        /* margin-top: 50px; */
+        margin-left: 60px;
+    }
+    
+  }

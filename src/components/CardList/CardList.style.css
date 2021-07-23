@@ -4,3 +4,9 @@
     overflow-x:scroll ;
     padding : 0 10px;
 }
+
+@media only screen and (min-width: 615px) {
+    .list-container{
+        margin-left: 40px;
+    }
+}

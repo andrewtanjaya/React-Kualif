@@ -1,8 +1,9 @@
 .user-big{
-    background-color: #512DA7;
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
+
+    margin-left: 20px;
+}
+
+BiUserCircle{
     margin-left: 20px;
 }
 .greetings-container{
@@ -26,4 +27,10 @@
 .greet-text p:nth-child(1){
     color: #928E92;
     font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 615px) {
+    .greetings-container{
+        margin-left: 40px;
+    }
 }

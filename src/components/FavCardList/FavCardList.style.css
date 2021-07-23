@@ -1,0 +1,13 @@
+.fav-card-list-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 615px) {
+    .fav-card-list-container{
+        margin-left: 60px;
+    }
+  }
+

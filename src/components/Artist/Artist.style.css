@@ -26,3 +26,10 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+@media only screen and (min-width: 615px) {
+    .artist-container{
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+  }

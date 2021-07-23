@@ -1,0 +1,14 @@
+.fav-text{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 615px) {
+    .fav-text{
+        color: white;
+        font-size: 1rem;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+  }
