@@ -4,8 +4,8 @@ import '../Card/Card.style.css'
 function Card(props) {
     return (
         <Link to={{
-            pathname: "/artist/" + props.artist,
-            state : {image : props.image}
+            pathname: "/artist/" + props.id,
+            state : {image : props.image, artist : props.artist}
         }}>
             <div className="card-container">
                 <div className="card-image">

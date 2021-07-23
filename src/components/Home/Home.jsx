@@ -16,7 +16,6 @@ function Home() {
             name: "ITZY"
         }
     })
-    const [itzyAlbum, setItzyAlbum] = useState([])
     const [itzyTrack, setItzyTrack] = useState([])
     const [albums, setAlbums] = useState([])
     let tracks = []
@@ -25,7 +24,6 @@ function Home() {
         if(data){
             console.log(data.artist.albums.length)
             setAlbums(data.artist.albums)
-            let counter = 0;
             for (let index = 0; index < data.artist.albums.length; index++) {
                 for (let i = 0; i < 5 && data.artist.albums[index].tracks[i]; i++) {
 

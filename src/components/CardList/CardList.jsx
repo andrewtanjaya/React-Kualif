@@ -7,7 +7,7 @@ function CardList(props) {
         <div className="list-container">
             {
                 props.albums.map(e=>{
-                    return <Card key={e.id} image={e.image} artist={e.name}></Card>
+                    return <Card key={e.id} id={e.id} image={e.image} artist={e.name}></Card>
                 })
             }
         </div>

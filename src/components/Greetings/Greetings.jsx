@@ -9,7 +9,7 @@ function Greetings() {
             </div>
             <div className="greet-text">
                 <p>MUSIC TO GET YOU STARTED</p>
-                <p><b>Welcome User!</b></p>
+                <p><b>Welcome Midzy!</b></p>
             </div>
         </div>
     )

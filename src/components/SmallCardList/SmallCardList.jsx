@@ -7,10 +7,9 @@ function SmallCardList(props) {
         <div className="small-card-list-container" >
             {
                 props.tracks.map(e=>{
-                    return <SmallCard key={e.id} image={e.album} title={e.name} artist={"asd"}></SmallCard>
+                    return <SmallCard key={e.id} image={e.album} title={e.name} artist={"ITZY"}></SmallCard>
                 })
             }
-            
         </div>
     )
 }
