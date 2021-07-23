@@ -6,6 +6,8 @@
     border-radius: 12px;
 }
 
+
+
 .header-nav{
     padding: 20px;
     display: flex;
@@ -26,4 +28,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.fav-nav-active{
+    color: white;
+}
+
+.fav-nav{
+    color: black;
+}
+.home-nav-active{
+    color: white;
+}
+
+.home-nav{
+    color: black;
 }
