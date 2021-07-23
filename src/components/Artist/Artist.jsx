@@ -21,8 +21,7 @@ function Artist(props) {
     const [itzyTrack, setItzyTrack] = useState([])
 
     useEffect(() => {
-        if(data){
-            console.log(data.album.tracks)  
+        if(data){ 
             setItzyTrack(data.album.tracks)
         }
     }, [data])

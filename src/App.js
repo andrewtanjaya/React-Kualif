@@ -11,6 +11,7 @@ import Favourite from './components/Favourite/Favourite';
 import Artist from './components/Artist/Artist';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
 import Song from './components/Song/Song';
+import Search from './components/Search/Search';
 
 const client = new ApolloClient({
   cache : new InMemoryCache(),
@@ -37,6 +38,10 @@ function App() {
             <Route
               path="/song/:song" exact
               component={Song}
+            />
+            <Route
+              path="/search/:search" exact
+              component={Search}
             />
           </div>
     </Router>

@@ -21,7 +21,7 @@
 .small-card-detail{
     margin-left: 10px;
     color: white;
-    width: 70%;
+    width: 15rem;
     line-height: 0.3rem;
     white-space: nowrap;
     overflow: hidden;
@@ -32,5 +32,5 @@
 }
 
 .fav{
-    margin-left: 10px;
+    margin-left: 20px;
 }
