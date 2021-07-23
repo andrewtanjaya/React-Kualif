@@ -12,7 +12,9 @@ query getSingleArtistAlbum($name : String!){
         name
         image
         tracks{
-          preview_url
+            id
+            name
+            preview_url
         }
       }
     }

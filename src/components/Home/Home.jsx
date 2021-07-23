@@ -17,12 +17,30 @@ function Home() {
         }
     })
     const [itzyAlbum, setItzyAlbum] = useState([])
+    const [itzyTrack, setItzyTrack] = useState([])
     const [albums, setAlbums] = useState([])
+    let tracks = []
 
     useEffect(() => {
         if(data){
-            console.log(data.artist.albums)
+            console.log(data.artist.albums.length)
             setAlbums(data.artist.albums)
+            let counter = 0;
+            for (let index = 0; index < data.artist.albums.length; index++) {
+                for (let i = 0; i < 5 && data.artist.albums[index].tracks[i]; i++) {
+
+                        // console.log(typeof(data.artist.albums[index].tracks[i]))
+                        tracks.push({
+                            "id" : data.artist.albums[index].tracks[i].id,
+                            "name" : data.artist.albums[index].tracks[i].name,
+                            "preview_url" : data.artist.albums[index].tracks[i].preview_url,
+                            "album" : data.artist.albums[index].image
+                        })
+                }
+                
+            }
+            setItzyTrack(tracks)
+            console.log(itzyTrack)
         }
     }, [data])
 
@@ -35,7 +53,7 @@ function Home() {
             <Greetings></Greetings>
             <CardList albums={albums}></CardList>
             <QuickHeader></QuickHeader>
-            <SmallCardList></SmallCardList>
+            <SmallCardList tracks={itzyTrack}></SmallCardList>
       </div>
     )
 }

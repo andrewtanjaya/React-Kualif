@@ -23,7 +23,14 @@
     color: white;
     width: 70%;
     line-height: 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .small-card-detail p:nth-child(2){
     color: #928E92;
+}
+
+.fav{
+    margin-left: 10px;
 }
