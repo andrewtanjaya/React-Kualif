@@ -33,3 +33,15 @@ query getAlbum($id : String!){
     }
   }
 `
+
+
+export const LOAD_SINGLE_TRACKS = 
+gql`
+query getSong($id: String!){
+    track(id: $id){
+      id
+      name
+      preview_url
+    }
+  }
+`

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import '../Card/Card.style.css'
 function Card(props) {
     return (
-        <Link to={{
-            pathname: "/artist/" + props.id,
+        <Link style={{ textDecoration: 'none' }} to={{
+            pathname: "/album/" + props.id,
             state : {image : props.image, artist : props.artist}
         }}>
             <div className="card-container">

@@ -1,0 +1,46 @@
+.track-img{
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.track-img img{
+    width: 100%;
+}
+
+.song-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    
+}
+.album-name-song{
+    margin-top: 60px;
+}
+.album-name-song p{
+    color: white;
+    text-align: center;
+}
+
+.music-player{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    line-height: 0.1rem;
+    margin-top: 20px;
+}
+
+.music-player p:nth-child(2){
+    color: #928E92;
+}
+
+.music-player audio{
+    width: 80%;
+}

@@ -14,7 +14,7 @@ function Header() {
     return (
         <div className="header-fixed">
             <div className="header-nav">
-            <Link exact="true" to="/" className="logo-nav"
+            <Link style={{ textDecoration: 'none' }} exact="true" to="/" className="logo-nav"
             >
                 <div className="logo-text">
                 <div className="logo"></div>

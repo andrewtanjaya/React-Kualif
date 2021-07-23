@@ -10,6 +10,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Favourite from './components/Favourite/Favourite';
 import Artist from './components/Artist/Artist';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
+import Song from './components/Song/Song';
 
 const client = new ApolloClient({
   cache : new InMemoryCache(),
@@ -30,8 +31,12 @@ function App() {
               component={Favourite}
             />
             <Route
-              path="/artist/:artist" exact
+              path="/album/:artist" exact
               component={Artist}
+            />
+            <Route
+              path="/song/:song" exact
+              component={Song}
             />
           </div>
     </Router>

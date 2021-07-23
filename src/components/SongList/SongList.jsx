@@ -7,7 +7,7 @@ function SongList(props) {
             <div className="song-card-list-container" >
             {
                 props.tracks.map(e=>{
-                    return <SmallCard key={e.id} image={props.image} title={e.name} artist={"ITZY"}></SmallCard>
+                    return <SmallCard key={e.id} id={e.id} image={props.image} title={e.name} artist={"ITZY"}></SmallCard>
                 })
             }
         </div>
