@@ -21,6 +21,7 @@
 .small-card-detail{
     margin-left: 10px;
     color: white;
+    width: 70%;
     line-height: 0.3rem;
 }
 .small-card-detail p:nth-child(2){

@@ -1,0 +1,10 @@
+.song-card-list-container{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 500px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+}

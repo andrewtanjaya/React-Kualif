@@ -27,9 +27,6 @@ function App() {
               path="/artist/:artist" exact
               component={Artist}
             />
-
-            
-            
           </div>
     </Router>
     

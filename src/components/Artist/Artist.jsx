@@ -5,6 +5,7 @@ import '../Artist/Artist.style.css'
 import {IoShuffle} from 'react-icons/io5'
 import {FiRadio} from 'react-icons/fi'
 import SmallCardList from '../SmallCardList/SmallCardList'
+import SongList from '../SongList/SongList'
 
 function Artist(props) {
     const {artist} = useParams()
@@ -26,7 +27,7 @@ function Artist(props) {
                 </div>
                 <p><b>Songs</b></p>
             </div>
-            <SmallCardList></SmallCardList>
+            <SongList></SongList>
         </div>
     )
 }
