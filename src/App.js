@@ -9,11 +9,17 @@ import Home from './components/Home/Home';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Favourite from './components/Favourite/Favourite';
 import Artist from './components/Artist/Artist';
+import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
 
+const client = new ApolloClient({
+  cache : new InMemoryCache(),
+  uri : "https://spotify-graphql.up.railway.app/query"
+})
 
 function App() {
   return (
-    <Router>
+    <ApolloProvider client={client}>
+      <Router>
       <div className="overlay">
             <Route
               path="/" exact
@@ -29,6 +35,7 @@ function App() {
             />
           </div>
     </Router>
+    </ApolloProvider>
     
   );
 }

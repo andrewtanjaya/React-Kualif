@@ -11,7 +11,7 @@ function Artist(props) {
     const {artist} = useParams()
     document.body.style.backgroundImage = "url("+props.location.state.image+")";
     document.body.style.backgroundRepeat= "no-repeat";
-    document.body.style.backgroundSize= "contain";
+    document.body.style.backgroundSize= "cover";
     useEffect(() => {
         console.log(artist)
         console.log(props.location.state.image);
