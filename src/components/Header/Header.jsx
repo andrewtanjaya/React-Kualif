@@ -7,7 +7,8 @@ import {NavLink, useLocation} from 'react-router-dom'
 function Header() {
     const { pathname } = useLocation();
     return (
-        <div className="header-nav">
+        <div className="header-fixed">
+            <div className="header-nav">
             <div className="logo"></div>
             <div className="nav-mid">
             <NavLink exact to="/" className="home-nav"
@@ -16,13 +17,14 @@ function Header() {
             </NavLink>
             <NavLink exact to="/fav" className="fav-nav"
             activeStyle={{ color:'white' }}>
-                {pathname == "/fav" ? <MdFavorite color={"white"} size={24}></MdFavorite> : <MdFavoriteBorder color={"#928E92"} size={24}></MdFavoriteBorder>}
+                {pathname === "/fav" ? <MdFavorite color={"white"} size={24}></MdFavorite> : <MdFavoriteBorder color={"#928E92"} size={24}></MdFavoriteBorder>}
             </NavLink>
                 <BiSearchAlt2 color={"#928E92"} size={24}></BiSearchAlt2>
             </div>
             <div className="user">
 
             </div>
+        </div>
         </div>
     )
 }

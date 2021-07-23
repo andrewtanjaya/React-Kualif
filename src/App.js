@@ -8,6 +8,7 @@ import SmallCardList from './components/SmallCardList/SmallCardList';
 import Home from './components/Home/Home';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Favourite from './components/Favourite/Favourite';
+import Artist from './components/Artist/Artist';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
             />
             <Route
               path="/artist/:artist" exact
-              component={Favourite}
+              component={Artist}
             />
 
             

@@ -8,6 +8,9 @@ import '../Home/Home.style.css'
 
 
 function Home() {
+    document.body.style.backgroundImage = "url(\"https://iphonewalls.net/wp-content/uploads/2016/03/Pastel%20Colors%20Gradient%20iPhone%205%20Wallpaper-320x480.jpg\")";
+    document.body.style.backgroundRepeat= "no-repeat";
+    document.body.style.backgroundSize= "cover";
     return (
         <div>
             <Header></Header>

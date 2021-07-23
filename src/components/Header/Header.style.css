@@ -7,13 +7,17 @@
 }
 
 
-
+/* .header-fixed{
+    position: absolute;
+    top : 0;
+} */
 .header-nav{
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    align-self: flex-start;
 }
 
 .user{

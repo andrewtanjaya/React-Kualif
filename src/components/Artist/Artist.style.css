@@ -1,0 +1,28 @@
+
+.artist-name{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.artist-container{
+    margin-left: 20px;
+    color: white
+}
+
+.but-ex button{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    margin-bottom: 30px;
+}
+.but-ex button b{
+    margin-left: 5px;
+}
+
+.but-ex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
