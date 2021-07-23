@@ -1,0 +1,28 @@
+.search-container{
+    position: absolute;
+    top : 0px;
+    left: 0px;
+    padding: 10px 15px;
+}
+
+.search-bar-cont input{
+    padding-right: 20px;
+    font-size: 1.2rem;
+    width: 80%;
+    height: 40px;
+    background-color: #212121;
+    border: none;
+    color: white;
+}
+
+.back-search-icon{
+    padding: 12px 15px;
+}
+
+.search-bar-cont {
+    background-color: #212121;
+    width: 345px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
