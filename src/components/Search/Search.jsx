@@ -35,7 +35,7 @@ function Search() {
               )
             setItzyTrack(filteredTracks)
         }
-    }, [data])
+    }, [search])
 
     return (
         <div>

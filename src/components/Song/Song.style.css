@@ -44,3 +44,19 @@
 .music-player audio{
     width: 80%;
 }
+
+@media only screen and (min-width: 615px) {
+    .song-container{
+        margin: 0 auto;
+        width: 500px;
+    }
+    .track-img{
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+    .music-player audio{
+        width: 60%;
+    }
+}

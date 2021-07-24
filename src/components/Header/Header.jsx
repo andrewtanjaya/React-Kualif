@@ -36,12 +36,12 @@ function Header() {
                     {pathname === "/fav" ? <MdFavorite className="fav-nav-icon" color={"white"} size={24}></MdFavorite> : <MdFavoriteBorder className="fav-nav-icon" color={"#928E92"} size={24}></MdFavoriteBorder>}
                     <p className="header-link-text"><b>Favorite</b></p>
                 </NavLink>
+                    <div onClick={showSearch} onMouseOver={({target})=>target.style.color='white'} 
+                        onMouseOut={({target})=>target.style.color='#928E92'} className="search-nav">
+                        <BiSearchAlt2 className="search-nav-icon"  color={pathname.startsWith("/search") ? "white" : "#928E92"} size={24}></BiSearchAlt2>
+                        <p className="search-link-text"><b>Search</b></p>
+                    </div>
 
-                <div onClick={showSearch} onMouseOver={({target})=>target.style.color='white'} 
-                    onMouseOut={({target})=>target.style.color='#928E92'} className="search-nav">
-                    <BiSearchAlt2 className="search-nav-icon"  color={pathname.startsWith("/search") ? "white" : "#928E92"} size={24}></BiSearchAlt2>
-                    <p className="search-link-text"><b>Search</b></p>
-                </div>
             </div>
             {/* <div className="user">
 
