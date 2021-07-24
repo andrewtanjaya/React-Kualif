@@ -35,8 +35,8 @@ function Artist(props) {
             <div className="artist-container">
                 <p className="artist-name"><b>{props.location.state.artist}</b></p>
                 <div className="but-ex">
-                    <button><IoShuffle size={24}></IoShuffle><b>SHUFFLE</b></button>
-                    <button><FiRadio size={24}></FiRadio><b>RADIO</b></button>
+                    <button disabled><IoShuffle size={24}></IoShuffle><b>SHUFFLE</b></button>
+                    <button disabled><FiRadio size={24}></FiRadio><b>RADIO</b></button>
                 </div>
                 <p><b>Songs</b></p>
             </div>
