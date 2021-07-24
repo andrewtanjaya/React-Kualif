@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Header from '../Header/Header'
 import '../Artist/Artist.style.css'
 import {IoShuffle} from 'react-icons/io5'
 import {FiRadio} from 'react-icons/fi'
-import SmallCardList from '../SmallCardList/SmallCardList'
 import SongList from '../SongList/SongList'
 import {LOAD_SINGLE_ALBUM_TRACKS} from '../../GraphQL/Queries'
 import { useQuery } from '@apollo/client'
 
 function Artist(props) {
     const {artist} = useParams()
-    const {error, loading, data} = useQuery(LOAD_SINGLE_ALBUM_TRACKS,{
+    const {data} = useQuery(LOAD_SINGLE_ALBUM_TRACKS,{
         variables: {
             id: artist
         }

@@ -11,7 +11,7 @@ import {useQuery} from '@apollo/client'
 
 function Home() {
 
-    const {error, loading, data} = useQuery(LOAD_SINGLE_ARTIST_ALBUM,{
+    const {data} = useQuery(LOAD_SINGLE_ARTIST_ALBUM,{
         variables: {
             name: "ITZY"
         }

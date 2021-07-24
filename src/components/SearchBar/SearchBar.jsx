@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import '../SearchBar/SearchBar.style.css'
 import {IoMdArrowBack} from 'react-icons/io'
 import { useHistory } from 'react-router-dom';

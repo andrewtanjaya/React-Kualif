@@ -9,7 +9,7 @@ function Favourite() {
     return (
         <div>
             <Header></Header>
-            {favItem.length !=0 ? <p className="fav-text"><b>Favorite Songs</b></p> : <p className="fav-text"><b>No Favorite Song</b></p>}
+            {favItem.length !== 0 ? <p className="fav-text"><b>Favorite Songs</b></p> : <p className="fav-text"><b>No Favorite Song</b></p>}
             <FavCardList tracks= {favItem}></FavCardList>
         </div>
     )

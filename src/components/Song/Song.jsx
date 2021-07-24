@@ -7,7 +7,7 @@ import { useQuery } from '@apollo/client'
 
 function Song(props) {
     const {song} = useParams()
-    const {error, loading, data} = useQuery(LOAD_SINGLE_TRACKS,{
+    const { data} = useQuery(LOAD_SINGLE_TRACKS,{
         variables: {
             id: song.toString()
         }

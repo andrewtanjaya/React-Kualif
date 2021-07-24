@@ -4,7 +4,6 @@ import {BiSearchAlt2, BiUserCircle} from 'react-icons/bi'
 import '../Header/Header.style.css'
 import {NavLink, useLocation, Link} from 'react-router-dom'
 import SearchBar from '../SearchBar/SearchBar'
-import { useHistory } from "react-router-dom";
 
 function Header() {
     const { pathname } = useLocation();

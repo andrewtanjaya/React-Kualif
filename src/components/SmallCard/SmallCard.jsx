@@ -14,7 +14,7 @@ function SmallCard(props) {
                 track.id.toLowerCase().includes(props.id.toLowerCase())
               )
         }
-        setFaved(favItem == null ? false : filteredFav.length == 0 ? false : true)
+        setFaved(favItem === null ? false : filteredFav.length == 0 ? false : true)
     }, [favItem])
     const addToLocalStorage = ()=>{
         favItem = JSON.parse(localStorage.getItem("fav"))
