@@ -11,7 +11,7 @@ import {useQuery} from '@apollo/client'
 
 function Home() {
 
-    const {data} = useQuery(LOAD_SINGLE_ARTIST_ALBUM,{
+    const {loading,data} = useQuery(LOAD_SINGLE_ARTIST_ALBUM,{
         variables: {
             name: "ITZY"
         }
@@ -44,10 +44,14 @@ function Home() {
     return (
         <div>
             <Header></Header>
-            <Greetings></Greetings>
-            <CardList albums={albums}></CardList>
-            <QuickHeader></QuickHeader>
-            <SmallCardList tracks={itzyTrack}></SmallCardList>
+            {loading ? <h1 className="loading-text">Loading..</h1> : 
+                <div>
+                    <Greetings></Greetings>
+                <CardList albums={albums}></CardList>
+                <QuickHeader></QuickHeader>
+                <SmallCardList tracks={itzyTrack}></SmallCardList>
+                </div>
+            }
       </div>
     )
 }
